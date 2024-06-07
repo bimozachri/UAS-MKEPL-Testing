@@ -64,7 +64,7 @@ public class KasirTest {
 
     @Test
     public void testCheckout() {
-        Item item1 = new Item("Apple", 1.0, 3);
+        Item item1 = new Item("Apple", 1.0, 4);
         Item item2 = new Item("Banana", 0.5, 5);
         cashierService.addItem(item1);
         cashierService.addItem(item2);
@@ -72,7 +72,7 @@ public class KasirTest {
         cashierService.checkout();
 
         String expectedOutput = "Items in the cart:" + System.lineSeparator() +
-                                "Apple - 3 x 1.0 = 3.0" + System.lineSeparator() +
+                                "Apple - 4 x 1.0 = 4.0" + System.lineSeparator() +
                                 "Banana - 5 x 0.5 = 2.5" + System.lineSeparator() +
                                 "Total amount: 5.5" + System.lineSeparator() +
                                 "Thank you for your purchase!" + System.lineSeparator();
